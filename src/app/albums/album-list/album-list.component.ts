@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { Album } from "../album.model";
-import { ALBUMS } from "../albums.data";
+// import { ALBUMS } from "../albums.data";
 import { AlbumService } from '../shared/album.service';
 
 @Component({
@@ -24,6 +24,9 @@ export class AlbumListComponent implements OnInit {
   }
 
   getAlbums() {
-    this.albumsArray = this.albumService.getAlbums();
+    this.albumService.getAlbums()
+    .subscribe(
+        albums => this.albumsArray = albums,
+        error => console.log("Error: ", error));
   }
 }

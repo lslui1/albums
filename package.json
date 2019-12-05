@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --port 3334 -o",
+    "start": "run-p start-db start-app",
+    "start-app": "ng serve --port 3333 -o",
+    "start-db": "json-server --watch data/music-info.json --port 3334",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",

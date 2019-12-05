@@ -1,7 +1,5 @@
 import { Component } from "@angular/core";
 
-import { Album } from "./albums/album.model";
-
 @Component({
   selector: "app-root",
   templateUrl: "./app.component.html",
