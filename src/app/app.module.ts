@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NotfoundComponent } from './notfound/notfound.component';
-import { AboutComponent } from './about/about.component';
 import { AlbumsModule } from './albums/albums.module';
 
 @NgModule({
@@ -15,8 +14,7 @@ import { AlbumsModule } from './albums/albums.module';
     AppComponent,
     WelcomeComponent,
     NavbarComponent,
-    NotfoundComponent,
-    AboutComponent
+    NotfoundComponent
   ],
   imports: [
     BrowserModule,
