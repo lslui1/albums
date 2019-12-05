@@ -4,18 +4,15 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AlbumListComponent } from './albums/album-list/album-list.component';
-import { AlbumCardComponent } from './albums/album-card/album-card.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { AboutComponent } from './about/about.component';
+import { AlbumsModule } from './albums/albums.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AlbumListComponent,
-    AlbumCardComponent,
     WelcomeComponent,
     NavbarComponent,
     NotfoundComponent,
@@ -24,7 +21,8 @@ import { AboutComponent } from './about/about.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    AlbumsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
