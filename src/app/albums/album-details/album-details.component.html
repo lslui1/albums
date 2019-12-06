@@ -29,8 +29,13 @@
       </tbody>
     </table>
   </div>
-  <button routerLink="edit" routerLinkActive="button-active" class="button">
+  <br>
+  <br>
+  <router-outlet></router-outlet>
+  <button [routerLink]="['edit']"
+          [queryParams]="{albumToEdit:album | json}"
+          routerLinkActive="button-active" class="button">
       Edit Album Details
   </button>
-  <router-outlet></router-outlet>
+
 </div>
